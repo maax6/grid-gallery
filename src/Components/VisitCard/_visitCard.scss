@@ -1,0 +1,16 @@
+.visit-card {
+  padding: 1em;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: baseline;
+  &__header {
+    &__picContainer {
+      &__img {
+        width: 8em;
+        height: 8em;
+      }
+    }
+  }
+}

@@ -24,15 +24,15 @@ export function VisitCard(props: VisitCardProps) {
         <div className="visit-card__body__infos">
           <div className="visit-card__body__infos__rapid">
             <span className='visit-card__body__infos__rapid__title'>Following</span>
-            <span> {props.following}</span>
+            <span className='visit-card__body__infos__rapid__amount'> {props.following}</span>
           </div>
           <div className="visit-card__body__infos__rapid">
             <span className='visit-card__body__infos__rapid__title'>Followers</span>
-            <span> {props.followers}</span>
+            <span className='visit-card__body__infos__rapid__amount'> {props.followers}</span>
           </div>
           <div className="visit-card__body__infos__rapid">
             <span className='visit-card__body__infos__rapid__title'>Posts</span>
-            <span> {props.posts}</span>
+            <span className='visit-card__body__infos__rapid__amount'> {props.posts}</span>
           </div>
         </div>
       </div>

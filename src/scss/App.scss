@@ -22,8 +22,10 @@ html {
   img {
 	max-width: 100%;
 	height: auto;
+	background-size: cover;
   }
 body{
-	background-color: #898383;
+	background-color: #FFF;
 	min-height: 100vh;
+	font-family: 'Montserrat', sans-serif;
 }

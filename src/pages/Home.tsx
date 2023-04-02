@@ -1,5 +1,7 @@
 import { VisitCard } from '../Components/VisitCard/VisitCard';
 import { VisitCardProps } from '../Components/VisitCard/VisitCard';
+import { GridPics } from '../Components/GridPics/GridPics';
+import './_home.scss';
 export function Home() {
   const visitCardProps: VisitCardProps = {
     name: 'Rodney Cotton',
@@ -9,5 +11,10 @@ export function Home() {
     followers: 2242,
     posts: 100,
   };
-  return <VisitCard {...visitCardProps} />;
+  return (
+    <div className="home">
+      <VisitCard {...visitCardProps} />
+      <GridPics />
+    </div>
+  );
 }

@@ -1,15 +1,55 @@
 import './_gridPics.scss';
 
+interface Photo {
+  id: number;
+  src: string;
+  alt: string;
+}
+
 export function GridPics() {
+  // variable avec les elements de asset
+  const Photos: Photo[] = [
+    {
+      id: 1,
+      src: 'src/assets/photo1.png',
+      alt: 'image 1',
+    },
+    {
+      id: 2,
+      src: 'src/assets/photo2.png',
+      alt: 'image 2',
+    },
+    {
+      id: 3,
+      src: 'src/assets/photo3.png',
+      alt: 'image 3',
+    },
+    {
+      id: 4,
+      src: 'src/assets/photo4.png',
+      alt: 'image 4',
+    },
+    {
+      id: 5,
+      src: 'src/assets/photo5.png',
+      alt: 'image 5',
+    },
+    {
+      id: 6,
+      src: 'src/assets/photo6.png',
+      alt: 'image 6',
+    },
+  ];
   return (
     <div className="gridPics">
       <div className="ctn container">
-        <div className="ctn__photo-1"></div>
-        <div className="ctn__photo-2"></div>
-        <div className="ctn__photo-3"></div>
-        <div className="ctn__photo-4"></div>
-        <div className="ctn__photo-5"></div>
-        <div className="ctn__photo-6"></div>
+        {Photos.map((image: Photo, index: number) => (
+          <div
+            className={`ctn__photo-${image.id} element`}
+            key={index}
+            style={{ backgroundImage: `url(${image.src})` }}
+          ></div>
+        ))}
       </div>
     </div>
   );

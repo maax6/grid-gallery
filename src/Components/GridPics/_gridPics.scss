@@ -1,5 +1,10 @@
+.gridPics{
+	margin: 0 10%;
+	@media screen and (min-width: 440px) {
+		margin: 0 30%;
+	}
+}
 .ctn {
-	
   display: grid;
   grid-template-columns: minmax(25vw, 1fr) minmax(25vw, 1fr) minmax(25vw, 1fr);
   grid-template-rows: minmax(25vw, 1fr) minmax(25vw, 1fr) minmax(25vw, 1fr);
@@ -53,9 +58,10 @@
   }
 }
 .element {
-  border-radius: 8px;
-  background-size: cover;
+	border-radius: 8px;
   transition: transform .12s;
+  width: 100%;
+  height: 100%;
   cursor: pointer;
   &:hover {
 	transform: scale(1.05);

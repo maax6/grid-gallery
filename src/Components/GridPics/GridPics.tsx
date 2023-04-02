@@ -44,11 +44,9 @@ export function GridPics() {
     <div className="gridPics">
       <div className="ctn container">
         {Photos.map((image: Photo, index: number) => (
-          <div
-            className={`ctn__photo-${image.id} element`}
-            key={index}
-            style={{ backgroundImage: `url(${image.src})` }}
-          ></div>
+          <div className={`ctn__photo-${image.id}`} key={index}>
+            <img className="element" src={image.src} alt={image.alt} />{' '}
+          </div>
         ))}
       </div>
     </div>

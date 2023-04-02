@@ -1,4 +1,20 @@
 .home{
+min-height: 100vh;
 display: flex;
 flex-direction: column;
-}
+align-items: center;
+} 
+
+// background-image:
+//     repeating-linear-gradient(
+//       -45deg,
+//       transparent,
+//       transparent 25px,
+//       rgba(120, 99, 99, 0.2) 25px,
+//       rgba(107, 100, 100, 0.2) 50px),
+//     repeating-linear-gradient(
+//       45deg,
+//       transparent,
+//       transparent 25px,
+//       rgba(150, 140, 140, 0.2) 25px,
+//       rgba(96, 87, 87, 0.2) 50px);

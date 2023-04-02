@@ -7,7 +7,7 @@ export function Home() {
   const visitCardProps: VisitCardProps = {
     name: 'Rodney Cotton',
     location: 'Helsinki, Finland',
-    src: 'src/assets/profilePhoto.png',
+    src: '/img/profilePhoto.png',
     following: 1432,
     followers: 2242,
     posts: 100,

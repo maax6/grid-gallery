@@ -11,32 +11,32 @@ export function GridPics() {
   const Photos: Photo[] = [
     {
       id: 1,
-      src: 'src/assets/photo1.png',
+      src: '/img/photo1.png',
       alt: 'image 1',
     },
     {
       id: 2,
-      src: 'src/assets/photo2.png',
+      src: '/img/photo2.png',
       alt: 'image 2',
     },
     {
       id: 3,
-      src: 'src/assets/photo3.png',
+      src: '/img/photo3.png',
       alt: 'image 3',
     },
     {
       id: 4,
-      src: 'src/assets/photo4.png',
+      src: '/img/photo4.png',
       alt: 'image 4',
     },
     {
       id: 5,
-      src: 'src/assets/photo5.png',
+      src: '/img/photo5.png',
       alt: 'image 5',
     },
     {
       id: 6,
-      src: 'src/assets/photo6.png',
+      src: '/img/photo6.png',
       alt: 'image 6',
     },
   ];
